@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+<!--        button {-->
+<!--            padding: 5px 10px;-->
+<!--            font-size: 14px;-->
+<!--            cursor: pointer;-->
+<!--        }-->
+    </style>
+<table>
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+                    <th scope="col">NAME</th>
+<!--                    <th scope="col">EMAIL</th>-->
+<!--                    <th scope="col">CONTACT</th>-->
+                    <th scope="col">SERVICE</th>
+<!--                    <th scope="col">PROFILE</th>-->
+<!--                    <th scope="col">APPROVE</th>-->
+<!--                    <th scope="col">REJECT</th>-->
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in r %}
+                <tr>
+                    <td>{{i.id}}</td>
+                    <td>{{i.s_firstname}}</td>
+<!--                    <td>{{i.s_email}}</td>-->
+<!--                    <td>{{i.s_phoneno}}</td>-->
+                    <td>{{i.s_service}}</td>
+<!--                    <td><a href="serviceman_pro/{{i.id}}"><button type="button" class="btn btn-success">Profile</button></a> </td>-->
+<!--                    <td><a href="approve/{{i.id}}"><button type="button" class="btn btn-success">Approve</button></a> </td>-->
+<!--                    <td><a href="reject/{{i.id}}"><button type="button" class="btn btn-danger">Reject</button></a> </td>-->
+                </tr>
+                {% endfor %}
+        </tbody>
+      </table>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- {% for i in a1 %}-->
+<!-- {{i.city}}-->
+<!-- {% endfor %}-->
+<!--{{a1}}-->
+<!--{{b1}}-->
+<form action="maid_searching" method="post">
+{% csrf_token %}
+<TABLE>
+   <TR>
+    <TH COLSPAN="2">Find Your Maid</TH>
+   </TR>
+
+<!--   <TR>-->
+<!--     <TD><LABEL>Login Name:</LABEL></TD>-->
+<!--     <TD><LABEL>Password</LABEL></TD>-->
+<!--   </TR>-->
+   <TR>
+     <TD> <select name="n1">
+                     <option value="">Select City
+                     </option>
+                     {% for i in a1 %}
+                     <option>{{i.city}}</option>
+                     {% endfor %}
+                  </select></TD>
+     <TD><select name="n2">
+                     <option value="">Select Service
+                     </option>
+                     {% for i in b1 %}
+                     <option>{{i.category}}</option>
+                     {% endfor %}
+                  </select></TD>
+   </TR>
+   <TR>
+     <TD COLSPAN="2" align="center"><INPUT type="submit" value="Search"></TD>
+   </TR>
+
+</TABLE>
+</form>
+</body>
+</html>

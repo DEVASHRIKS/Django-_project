@@ -1,0 +1,98 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+<head>
+<title>Property Search Widget Form Responsive Widget Template | Home :: w3layouts</title>
+<link href="{% static 'asset_maidsearching/css/style.css' %}" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" type="text/css" href="{% static 'asset_maidsearching/css/jquery-ui.css' %}">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="keywords" content="Property Search Widget Form  Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<!--web-fonts-->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'></head>
+<link href='//fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<!-- js -->
+<script type="text/javascript" src="{% static 'asset_maidsearching/js/jquery-2.1.4.min.js' %}"></script>
+<!-- //js -->
+<body>
+		<!---header--->
+		<div class="header">
+			<h1>Find Your Maid</h1>
+		</div>
+		<!---header--->
+		<!---main--->
+			<div class="main">
+				<div class="main-section">
+					<div class="property-section">
+						<h2>Find Here</h2>
+						<div class="property-bottom">
+							<form action="#" method="post">
+								{% csrf_token %}
+<!--								<input type="text" name="Name" placeholder="Filter by keywords" required>-->
+								<div class="select-section">
+									<div class="select-left">
+										<select class="sel" name="n1">
+											<option value="">City
+                     						</option>
+                     						{% for i in a1 %}
+                     						<option>{{i.city}}</option>
+                     						{% endfor %}
+										</select>
+									</div>
+									<div class="select-right">
+										<select class="sel" name="n2">
+											<option value="">Service
+											 </option>
+											 {% for i in b1 %}
+											 <option>{{i.category}}</option>
+											 {% endfor %}
+										</select>
+									</div>
+									<div class="clear"></div>
+								</div><br>
+<!--								<div class="filter-price">-->
+<!--									<h3>Price range</h3>-->
+<!--									<ul class="dropdown-menu6">-->
+<!--										<li>                -->
+<!--											<div id="slider-range"></div>							-->
+<!--											<input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />-->
+<!--										</li>			-->
+<!--									</ul>-->
+<!--									&lt;!&ndash;&ndash;&gt;-->
+<!--									<script type='text/javascript'>//<![CDATA[ -->
+<!--									$(window).load(function(){-->
+<!--									 $( "#slider-range" ).slider({-->
+<!--												range: true,-->
+<!--												min: 0,-->
+<!--												max: 9000,-->
+<!--												values: [ 1000, 7000 ],-->
+<!--												slide: function( event, ui ) {  $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );-->
+<!--												}-->
+<!--									 });-->
+<!--									$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );-->
+
+<!--									});//]]>  -->
+
+<!--									</script>-->
+<!--									<script type="text/javascript" src="{% static 'asset_maidsearching/js/jquery-ui.js' %}"></script>-->
+<!--								</div>-->
+								<!---->	
+								<input type="submit" value="Find Here">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+<!--			<p>&copy 2016 Property Search Widget . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>-->
+		</div>
+
+		<!---main--->
+</body>
+</html>

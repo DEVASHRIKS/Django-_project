@@ -1,0 +1,255 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<title>Auditions Registration Form Widget Flat Responsive Widget Template :: w3layouts</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Auditions Registration Form Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!-- //custom-theme -->
+<link href="{% static 'asset_servicemanhome/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js1 -->
+<script type="text/javascript" src="{% static 'asset_servicemanhome/js/jquery-2.1.4.min.js' %}"></script>
+<!-- //js1 -->
+<!-- font-awesome-icons -->
+<!-- //font-awesome-icons -->
+<link href="//fonts.googleapis.com/css?family=Anton&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+<!--	for working of home logout etc-->
+<link href="{% static 'asset_servicemanhome/css1/bootstrap.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'asset_servicemanhome/css1/style.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'asset_servicemanhome/css1/popuo-box.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'asset_servicemanhome/css1/fontawesome-all.min.css' %}" rel="stylesheet">
+
+<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+
+</head>
+<body>
+<!-- banner -->
+    <div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<h1>
+					<a class="navbar-brand text-capitalize" href="#">
+						Serviceman Home
+					</a>
+				</h1>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				    aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav text-center  ml-lg-auto">
+						<li class="nav-item active  mr-3">
+							<a class="nav-link" href="index.html">Home
+<!--								<span class="sr-only">(current)</span>-->
+							</a>
+						</li>
+						<li class="nav-item  mr-3">
+							<a class="nav-link" href="#">My Order</a>
+						</li>
+						<li class="nav-item  mr-3">
+							<a class="dropdown-item" href="#" >Profile</a>
+						</li>
+						<li class="nav-item  mr-3">
+							<a class="dropdown-item" href="#" >Change Password</a>
+						</li>
+						<li class="nav-item  mr-3">
+							<a class="dropdown-item" href="serviceman_out" >Log Out</a>
+						</li>
+<!--						<li class="nav-item dropdown mr-3">-->
+<!--							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"-->
+<!--							    aria-expanded="false">-->
+<!--								Hello-->
+<!--							</a>-->
+<!--							<div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--								<a class="dropdown-item" href="#">Profile</a>-->
+<!--								<a class="dropdown-item" href="#">Change Password</a>-->
+<!--								<a class="dropdown-item" href="serviceman_out" >Log Out</a>-->
+<!--							</div>-->
+<!--						</li>-->
+					</ul>
+				</div>
+			</nav>
+		</div>
+	<div class="center-container">
+	<div class="banner-dott">
+		<div class="main">
+			<h1 class="w3layouts_head">Edit Profile-Service Man</h1>
+				<div class="w3layouts_main_grid">
+					<form action="log" method="post" class="w3_form_post">
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>First Name </label>
+								<input type="text" name="Task" placeholder="Work Experience" required="">
+							</span>
+						</div>
+<!--						<div class="w3_agileits_main_grid w3l_main_grid">-->
+<!--							<span class="agileits_grid">-->
+<!--								<label>Last Name </label>-->
+<!--								<input type="text" name="Task" placeholder="Last Name" required="">-->
+<!--							</span>-->
+<!--						</div>-->
+<!--						<div class="w3_agileits_main_grid w3l_main_grid">-->
+<!--							<span class="agileits_grid">-->
+<!--								<label>Your Email </label>-->
+<!--								<input type="text" name="Task" placeholder="Your Email" required="">-->
+<!--							</span>-->
+<!--						</div>-->
+<!--						<div class="w3_agileits_main_grid w3l_main_grid">-->
+<!--							<span class="agileits_grid">-->
+<!--								<label>Phone Number </label>-->
+<!--								<input type="text" name="Task" placeholder="Phone Number" required="">-->
+<!--								</span>-->
+<!--						</div>-->
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Select City </label>
+								<select name="country">
+									<option value="none" selected="" disabled="">Select Category</option>
+									<option value="Ph">Kochi</option>
+									<option value="Po">Thrissur</option>
+									<option value="So">Trivandrum</option>
+									<option value="Sp">Kozhikode</option>
+
+								</select>
+							</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Type of ID </label>
+								<select name="country">
+									<option value="none" selected="" disabled="">Select Category</option>
+									<option value="Ph">Aadhar</option>
+									<option value="Po">Voter ID</option>
+									<option value="So">Driving License</option>
+									<option value="Sp">Pancard</option>
+
+								</select>
+							</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>Select Service </label>
+								<select name="country">
+									<option value="none" selected="" disabled="">Select Category</option>
+									<option value="Ph">Cleaning</option>
+									<option value="Po">Cook</option>
+									<option value="So">Baby Sitter</option>
+									<option value="Sp">Gardner</option>
+									<option value="Sp">Elderly Care</option>
+
+								</select>
+							</span>
+						</div>
+						<div class="w3_agileits_main_grid w3l_main_grid">
+							<span class="agileits_grid">
+								<label>ID Proof Image </label>
+								<input type="file" name="Task" placeholder="" required="">
+							</span>
+						</div>
+<!--						<div class="agileits_w3layouts_main_grid w3ls_main_grid">-->
+<!--							<span class="agileinfo_grid">-->
+<!--								<label>Date / Time </label>-->
+<!--								<div class="agileits_w3layouts_main_gridl">-->
+<!--									<input class="date" id="datepicker" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">-->
+<!--								</div>-->
+<!--								<div class="agileits_w3layouts_main_gridr">-->
+<!--									<input type="time" name="Time" placeholder=" " required="">-->
+<!--								</div>-->
+<!--									<div class="clear"> </div>-->
+<!--							</span>-->
+<!--						</div>-->
+					
+					<div class="w3_main_grid">
+						<div class="w3_main_grid_right">
+							<input type="submit" value="Submit">
+						</div>
+					</div>
+				</form>
+			</div>
+		<!-- Calendar -->
+			<link rel="stylesheet" href="css/jquery-ui.css" />
+				<script src="{% static 'asset_servicemanhome/js/jquery-ui.js' %}"></script>
+					<script>
+						$(function() {
+							$( "#datepicker" ).datepicker();
+						});
+					</script>
+		<!-- //Calendar -->
+			<div class="w3layouts_copy_right">
+				<div class="container">
+					<p>© 2017 Auditions Registration Form. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts.</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+<script src="{% static 'asset_servicemanhome/js/jquery-2.2.3.min.js' %}"></script>
+<script src="{% static 'asset_servicemanhome/js/responsiveslides.min.js' %}"></script>
+<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 4
+			$("#slider3").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+
+		});
+	</script>
+
+<script src="{% static 'asset_servicemanhome/js/jquery.waypoints.min.js' %}"></script>
+	<script src="{% static 'asset_servicemanhome/js/jquery.countup.js' %}"></script>
+		<script>
+			$('.counter').countUp();
+		</script>
+<script src="{% static 'asset_servicemanhome/js/jquery.magnific-popup.js' %}"></script>
+	<script>
+		$(document).ready(function () {
+			$('.popup-with-zoom-anim').magnificPopup({
+				type: 'inline',
+				fixedContentPos: false,
+				fixedBgPos: true,
+				overflowY: 'auto',
+				closeBtnInside: true,
+				preloader: false,
+				midClick: true,
+				removalDelay: 300,
+				mainClass: 'my-mfp-zoom-in'
+			});
+		});
+	</script>
+<script src="{% static 'asset_servicemanhome/js/bootstrap.js' %}">
+	</script>
+<!-- //footer -->
+</body>
+</html>

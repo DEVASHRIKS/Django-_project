@@ -1,0 +1,263 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+{% load static %}
+<html lang="zxx">
+
+<head>
+	<title>Home Loan a Banking Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Home Loan Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="{% static 'asset_servicemanhome_new/css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
+	<link href="{% static 'asset_servicemanhome_new/css/style.css' %}" rel='stylesheet' type='text/css' />
+	<!-- pop up box -->
+	<link href="{% static 'asset_servicemanhome_new/css/popuo-box.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!-- font-awesome icons -->
+	<link href="{% static 'asset_servicemanhome_new/css/fontawesome-all.min.css' %}" rel="stylesheet">
+	<!-- //Custom Theme files -->
+	<!-- online fonts -->
+	<!-- titles -->
+	<link href="//fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+	<!-- body -->
+	<link href="//fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+    <link href="{% static 'asset_maidsearching/css/style.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'asset_maidsearching/css/jquery-ui.css' %}">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Property Search Widget Form  Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <!--web-fonts-->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'></head>
+    <link href='//fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!-- js -->
+    <script type="text/javascript" src="{% static 'asset_maidsearching/js/jquery-2.1.4.min.js' %}"></script>
+<!-- //js -->
+</head>
+
+<body>
+ {% if message %}
+        <script>
+            alert("{{ message }}");
+        </script>
+    {% endif %}
+	<!-- header -->
+	<header>
+<!--	<div class="top">-->
+<!--			<div class="container">-->
+<!--				<div class="t-op row">-->
+<!--					<div class="col-sm-6 top-middle">-->
+<!--						<ul>-->
+<!--							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>-->
+<!--							<li><a href="#"><i class="fab fa-twitter"></i></a></li>-->
+<!--							<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>-->
+<!--							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>-->
+<!--						</ul>-->
+<!--					</div>-->
+<!--					<div class="col-sm-6 top-left">-->
+<!--						<ul>-->
+<!--							<li><i class="fas fa-phone"></i> +021 365 777</li>-->
+<!--						</ul>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<h1>
+					<a class="navbar-brand text-capitalize" href="/">
+						Maid Finder
+					</a>
+				</h1>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				    aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav text-center  ml-lg-auto">
+						<li class="nav-item active  mr-3">
+							<a class="nav-link" href="/">Home
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item  active mr-3">
+							<a class="nav-link" href="services_customer">Services</a>
+						</li>
+						<li class="nav-item  mr-3">
+							<a class="nav-link" href="maid_searching">Find your maid</a>
+						</li>
+						</li>
+							<li class="nav-item  mr-3">
+							<a class="nav-link" href="view_order_customer">My Order</a>
+						</li>
+<!--						<li class="nav-item  mr-3">-->
+<!--							<a class="nav-link" href="services_new.html">Services</a>-->
+<!--						</li>-->
+<!--						<li class="nav-item">-->
+<!--							<a class="nav-link" href="contact.html">Contact</a>-->
+<!--						</li>-->
+						<li class="nav-item dropdown mr-3">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+							    aria-expanded="false">
+								Settings
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="profile_customer">Profile</a>
+<!--								<a class="dropdown-item" href="#">Change Password</a>-->
+								<a class="dropdown-item" href="customer_out">Log Out</a>
+							</div>
+						</li>
+<!--						<li class="nav-item">-->
+<!--							<a class="nav-link" href="login">Login</a>-->
+<!--						</li>-->
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- //header -->
+	<!-- banner -->
+    <div class="header">
+			<h1>Find Your Maid</h1>
+		</div>
+	<div class="main">
+				<div class="main-section">
+					<div class="property-section">
+						<h2>Find Here</h2>
+						<div class="property-bottom">
+							<form action="#" method="post">
+								{% csrf_token %}
+<!--								<input type="text" name="Name" placeholder="Filter by keywords" required>-->
+								<div class="select-section">
+									<div class="select-left">
+										<select class="sel" name="n1">
+											<option value="">City
+                     						</option>
+                     						{% for i in a1 %}
+                     						<option>{{i.city}}</option>
+                     						{% endfor %}
+										</select>
+									</div>
+									<div class="select-right">
+										<select class="sel" name="n2">
+											<option value="">Service
+											 </option>
+											 {% for i in b1 %}
+											 <option>{{i.category}}</option>
+											 {% endfor %}
+										</select>
+									</div>
+									<div class="clear"></div>
+								</div><br>
+<!--								<div class="filter-price">-->
+<!--									<h3>Price range</h3>-->
+<!--									<ul class="dropdown-menu6">-->
+<!--										<li>                -->
+<!--											<div id="slider-range"></div>							-->
+<!--											<input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />-->
+<!--										</li>			-->
+<!--									</ul>-->
+<!--									&lt;!&ndash;&ndash;&gt;-->
+<!--									<script type='text/javascript'>//<![CDATA[ -->
+<!--									$(window).load(function(){-->
+<!--									 $( "#slider-range" ).slider({-->
+<!--												range: true,-->
+<!--												min: 0,-->
+<!--												max: 9000,-->
+<!--												values: [ 1000, 7000 ],-->
+<!--												slide: function( event, ui ) {  $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );-->
+<!--												}-->
+<!--									 });-->
+<!--									$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );-->
+
+<!--									});//]]>  -->
+
+<!--									</script>-->
+<!--									<script type="text/javascript" src="{% static 'asset_maidsearching/js/jquery-ui.js' %}"></script>-->
+<!--								</div>-->
+								<!---->
+								<input type="submit" value="Find Here">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+<!--			<p>&copy 2016 Property Search Widget . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>-->
+		</div>
+
+<!-- //Modal -->
+<!-- js1-->
+	<script src="{% static 'asset_servicemanhome_new/js/jquery-2.2.3.min.js' %}"></script>
+<!-- js1-->
+<!-- Banner Responsiveslides -->
+	<script src="{% static 'asset_servicemanhome_new/js/responsiveslides.min.js' %}"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 4
+			$("#slider3").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+
+		});
+	</script>
+<!-- // Banner Responsiveslides -->
+<!-- stats -->
+	<script src="{% static 'asset_servicemanhome_new/js/jquery.waypoints.min.js' %}"></script>
+	<script src="{% static 'asset_servicemanhome_new/js/jquery.countup.js' %}"></script>
+		<script>
+			$('.counter').countUp();
+		</script>
+<!-- //stats -->
+<!--pop-up-box -->
+	<script src="{% static 'asset_servicemanhome_new/js/jquery.magnific-popup.js' %}"></script>
+	<script>
+		$(document).ready(function () {
+			$('.popup-with-zoom-anim').magnificPopup({
+				type: 'inline',
+				fixedContentPos: false,
+				fixedBgPos: true,
+				overflowY: 'auto',
+				closeBtnInside: true,
+				preloader: false,
+				midClick: true,
+				removalDelay: 300,
+				mainClass: 'my-mfp-zoom-in'
+			});
+		});
+	</script>
+	<!-- //pop-up-box -->
+	<!-- Bootstrap Core JavaScript -->
+	<script src="{% static 'asset_servicemanhome_new/js/bootstrap.js' %}">
+	</script>
+	<!-- //Bootstrap Core JavaScript -->
+</body>
+</html>

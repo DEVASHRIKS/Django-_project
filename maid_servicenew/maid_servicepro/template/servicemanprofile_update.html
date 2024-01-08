@@ -1,0 +1,216 @@
+<!--A Design by W3layouts
+   Author: W3layout
+   Author URL: http://w3layouts.com
+   License: Creative Commons Attribution 3.0 Unported
+   License URL: http://creativecommons.org/licenses/by/3.0/
+   -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+   <head>
+      <title>Summer Camp Form a Flat Responsive Widget Template :: w3layouts </title>
+      <!-- Meta tags -->
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="keywords" content="Summer Camp Form Responsive Widget, Audio and Video players, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design"
+         />
+      <script>
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+      </script>
+      <!-- Meta tags -->
+      <!-- Calendar -->
+      <link rel="stylesheet" href="{% static 'asset_servicemanreg_new/css/jquery-ui.css' %}" />
+      <!-- //Calendar -->
+      <!--stylesheets-->
+      <link href="{% static 'asset_servicemanreg_new/css/style.css' %}" rel='stylesheet' type='text/css' media="all">
+      <!--//style sheet end here-->
+      <!-- Google fonts here-->
+      <link href="//fonts.googleapis.com/css?family=Barlow:300,400,500" rel="stylesheet">
+      <link href="//fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+      <!--//Google fonts here-->
+   </head>
+   <body>
+      <h1 class="header-w3ls">
+         Serviceman Registration Update Form
+      </h1>
+      <!-- multistep form -->
+      <div class="main-bothside">
+         <form action="#" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="main-title">
+               <h2> Personal Details</h2>
+            </div>
+         {% for i in r %}
+            <div class="form-group">
+               <div class="form-grid-w3ls">
+                  <input type="text" value="{{i.username}}" name="s1" class="form-control" placeholder="Username" required="">
+               </div>
+<!--               <div class="form-grid-w3ls">-->
+<!--                  <input type="password" name="s2" class="form-control" placeholder="Password" required="">-->
+<!--               </div>-->
+            </div>
+            <div class="form-group">
+               <div class="form-grid-w3ls">
+                  <input type="text" value="{{i.s_firstname}}" name="s3" class="form-control" placeholder="First Name" required="">
+               </div>
+               <div class="form-grid-w3ls">
+                  <input type="text" value="{{i.s_lastname}}" name="s4" class="form-control" placeholder="Last Name" required="">
+               </div>
+            </div>
+            <div class="form-group">
+               <div class="form-grid-w3ls">
+                  <input type="email" value="{{i.s_email}}" name="s5" class="form-control" placeholder="Email" required="">
+               </div>
+               <div class="form-grid-w3ls">
+                  <input type="text" value="{{i.s_phoneno}}" name="s7" class="form-control" placeholder="Phone" required="">
+               </div>
+            </div>
+            <div class="form-group">
+               <div class="form-mid-w3ls">
+                  <input type="text" value="{{i.s_streetaddress}}" name="s9" placeholder="Address" required="">
+               </div>
+<!--               <div class="form-mid-w3ls">-->
+<!--                  <input type="text" placeholder="Street" required="">-->
+<!--               </div>-->
+               <div class="form-mid-w3ls">
+                  <input type="text" value="{{i.s_city}}" name="s10" placeholder="City" required="">
+               </div>
+               <div class="form-mid-w3ls">
+                  <input type="text" value="{{i.s_state}}" name="s11" placeholder="State" required="">
+               </div>
+            </div>
+            <div class="form-group">
+               <div class="form-mid-w3ls">
+                  <input type="text" value="{{i.s_pincode}}" name="s12" placeholder="Pin Code" required="">
+               </div>
+<!--               <div class="form-mid-w3ls">-->
+<!--                  <input type="text" placeholder="State" required="">-->
+<!--               </div>-->
+               <div class="form-mid-w3ls">
+<!--                  <select class="form-control buttom" name="s13">-->
+<!--                     <option value="">Select Country-->
+<!--                     </option>-->
+<!--                     <option value="India">India</option>-->
+<!--                     <option value="None">None</option>-->
+<!--                  </select>-->
+                  <input type="text" value="{{i.s_country}}" name="s13" placeholder="Country" required="">
+               </div>
+            </div>
+            <div class="form-grid-w3ls">
+<!--                  <label>Image</label>-->
+<!--                  <input type="file" value="{{i.s_image.url}}" name="s6" class="form-control" placeholder="Image" required="">-->
+               </div>
+            <div class="main-title">
+<!--               <h3>Working Details</h3>-->
+            </div>
+            <div class="form-group">
+               <div class="form-mid-w3ls">
+                  <input type="hidden" value="{{i.s_wexp}}" name="s14" placeholder="Work Experience" required="">
+               </div>
+<!--               <div class="form-mid-w3ls">-->
+<!--                 <label>Date of Birth</label> <input type="date" value="{{i.s_birthdate}}" name="s8" placeholder="Date of Birth" required="">-->
+<!--               </div>-->
+<!--               <div class="form-mid-w3ls">-->
+<!--                  <label>Date of Application</label><input type="date" value="{{i.s_dapp}}" name="s15" placeholder="Date of Application" required="">-->
+<!--               </div>-->
+            </div>
+            <div class="form-group">
+               <div class="form-mid-w3ls">
+                  <input type="hidden" value="{{i.s_scity}}" name="s16" placeholder="City" required="">
+<!--                  <select class="form-control buttom" name="s16">-->
+<!--                     <option value="">Select City-->
+<!--                     </option>-->
+<!--                     {% for i in b1 %}-->
+<!--                     <option>{{i.city}}</option>-->
+<!--                     {% endfor %}-->
+<!--&lt;!&ndash;                     <option value="">Select City&ndash;&gt;-->
+<!--&lt;!&ndash;                     </option>&ndash;&gt;-->
+<!--&lt;!&ndash;                     <option value="Thrissur">Thrissur</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                     <option value="Koci">Kochi</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                     <option value="Trivandrum">Trivandrum</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                     <option value="Kozhikode">Kozhikode</option>&ndash;&gt;-->
+<!--                  </select>-->
+               </div>
+               <div class="form-mid-w3ls">
+                  <input type="hidden" value="{{i.s_typid}}" name="s17" placeholder="Type of ID" required="">
+<!--                  <select class="form-control buttom" name="s17">-->
+<!--                     <option value="">Type of ID-->
+<!--                     </option>-->
+<!--                     <option value="Aadhar">Aadhar</option>-->
+<!--                     <option value="Voter ID">Voter ID</option>-->
+<!--                     <option value="Driving License">Driving License</option>-->
+<!--                     <option value="Pan Card">Pan Card</option>-->
+<!--                  </select>-->
+               </div>
+               <div class="form-mid-w3ls">
+                  <input type="hidden" value="{{i.s_service}}" name="s18" placeholder="Service" required="">
+<!--                  <select class="form-control buttom" name="s18">-->
+<!--                     <option value="">Select Service-->
+<!--                     </option>-->
+<!--                     {% for i in a1 %}-->
+<!--                     <option>{{i.category}}</option>-->
+<!--                     {% endfor %}-->
+<!--&lt;!&ndash;                     <option value="">Select your service&ndash;&gt;-->
+<!--&lt;!&ndash;                     </option>&ndash;&gt;-->
+<!--&lt;!&ndash;                     <option value="Cleaning">Cleaning</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                     <option value="Cook">Cook</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                     <option value="Baby Sitter">Baby Sitter</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                     <option value="Gardner">Gardner</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                     <option value="Elderly Care">Elderly Care</option>&ndash;&gt;-->
+<!--                  </select>-->
+               </div>
+            </div>
+<!--            <div class="form-grid-w3ls">-->
+<!--                  <label>ID Proof Image</label>-->
+<!--                  <input type="file" value="{{i.s_idimg.url}}" name="s19" class="form-control" placeholder="Image" required="">-->
+<!--               </div>-->
+<!--            <div class="form-group">-->
+<!--               <div class="form-grid-w3ls">-->
+<!--                  <input type="text" class="form-control" placeholder="Child Name" required="">-->
+<!--               </div>-->
+<!--               <div class="form-grid-w3ls">-->
+<!--                  <input id="datepicker1" name="text" type="text" placeholder="DoB" required="">-->
+<!--               </div>-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--               <div class="form-grid-w3ls">-->
+<!--                  <input type="text" class="form-control" placeholder="Class" required="">-->
+<!--               </div>-->
+<!--               <div class="form-grid-w3ls">-->
+<!--                  <input type="text" class="form-control" placeholder="School Name" required="">-->
+<!--               </div>-->
+<!--            </div>-->
+<!--            <div class="main-title">-->
+<!--               <h3>Medical Details</h3>-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--               <div class="form-grid-w3ls">-->
+<!--                  <input type="text" class="form-control" placeholder="Doctor Name" required="">-->
+<!--               </div>-->
+<!--               <div class="form-grid-w3ls">-->
+<!--                  <input type="text" class="form-control" placeholder="Doctor Phone" required="">-->
+<!--               </div>-->
+<!--            </div>-->
+<!--            <div class="form-control-w3l">-->
+<!--               <textarea name="Message" placeholder="Any Message..."></textarea>-->
+<!--            </div>-->
+            <input type="submit" value="Submit">
+         </form>
+      </div>
+      {% endfor %}
+      <div class="copy">
+         <p>©2018 Summer Camp Form. All Rights Reserved | Design by <a href="http://www.W3Layouts.com" target="_blank">W3Layouts</a></p>
+      </div>
+      <!-- js1 -->
+      <script src="{% static 'asset_servicemanreg_new/js/jquery-2.2.3.min.js' %}"></script>
+      <!-- //js1 -->
+      <!-- Calendar -->
+      <script src="{% static 'asset_servicemanreg_new/js/jquery-ui.js' %}"></script>
+      <script>
+         $(function () {
+         	$("#datepicker,#datepicker1,#datepicker2,#datepicker3").datepicker();
+         });
+      </script>
+      <!-- //Calendar -->
+   </body>
+</html>
